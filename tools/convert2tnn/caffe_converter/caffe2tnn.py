@@ -44,6 +44,7 @@ def convert(proto_path, model_path, output_dir, version, optimize, half):
     if version is None:
         version = "v1.0"
     is_ssd = checker.is_ssd_model(proto_path)
+    print("there!")
     if is_ssd:
         onnx2tnn.convert(onnx_path, output_dir, version, False, half)
     else:

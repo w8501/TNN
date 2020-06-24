@@ -53,3 +53,4 @@ def convert(onnx_path, output_dir=None, version="v1.0", optimize=True, half=Fals
         print("onnx2tnn succeed!")
     else:
         print("onnx2tnn failed!")
+

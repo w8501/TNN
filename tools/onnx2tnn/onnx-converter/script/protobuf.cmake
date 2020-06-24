@@ -1,5 +1,5 @@
 
-set(Protobuf_ROOT ${CMAKE_SOURCE_DIR}/3rdparty/protobuf)
+set(Protobuf_ROOT E:/protobuf-3.4.0/build_test/install)
 
 if(EXISTS ${Protobuf_ROOT}/lib/cmake/protobuf)
     set(Protobuf_DIR ${Protobuf_ROOT}/lib/cmake/protobuf)

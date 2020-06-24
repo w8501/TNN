@@ -37,6 +37,7 @@ def main():
         version = args.version
         optimize = args.optimize
         half = args.half
+        print("there?")
         caffe2tnn.convert(proto_path, model_path, output_dir, version, optimize, half)
 
     elif args.sub_command == 'tf2tnn':

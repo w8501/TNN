@@ -25,8 +25,8 @@ include_directories(./../src/core/onnx_process_tf)
 
 file(GLOB_RECURSE ONNX2TNN_SRC ./../src/core/*.h ./../src/core/*.cc)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-deprecated-declarations -Wno-ignored-attributes")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations -Wno-ignored-attributes")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -std=c++11")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++11")

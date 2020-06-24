@@ -18,11 +18,11 @@
 #ifdef _OPENMP
 
 #include <omp.h>
-#define OMP_PARALLEL_FOR_ _Pragma("omp parallel for")
-#define OMP_PARALLEL_FOR_GUIDED_ _Pragma("omp parallel for")
-#define OMP_PARALLEL_FOR_DYNAMIC_ _Pragma("omp parallel for schedule(dynamic)")
-#define OMP_SECTION_ _Pragma("omp section")
-#define OMP_PARALLEL_SECTIONS_ _Pragma("omp parallel sections")
+#define OMP_PARALLEL_FOR_ __pragma("omp parallel for")
+#define OMP_PARALLEL_FOR_GUIDED_ __pragma("omp parallel for")
+#define OMP_PARALLEL_FOR_DYNAMIC_ __pragma("omp parallel for schedule(dynamic)")
+#define OMP_SECTION_ __pragma("omp section")
+#define OMP_PARALLEL_SECTIONS_ __pragma("omp parallel sections")
 #define OMP_CORES_ (omp_get_num_procs())
 #define OMP_MAX_THREADS_NUM_ (omp_get_max_threads())
 #define OMP_TID_ (omp_get_thread_num())

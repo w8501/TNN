@@ -16,6 +16,7 @@
 #include <set>
 #include <sstream>
 #include <string>
+#include <algorithm>
 
 #include "tnn/core/common.h"
 #include "tnn/core/macro.h"

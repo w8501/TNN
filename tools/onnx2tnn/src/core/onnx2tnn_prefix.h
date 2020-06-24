@@ -28,7 +28,7 @@
 #endif
 
 #define LOG_LEVEL 2
-#define LOG_FUNCTION (LOG_LEVEL >= 3 ? __PRETTY_FUNCTION__ : __FUNCTION__)
+#define LOG_FUNCTION (LOG_LEVEL >= 3 ? __FUNCTION__ : __FUNCTION__)
 #define DLog(fmt, ...)                                                         \
     printf(("%s [Line %d] " fmt), LOG_FUNCTION, __LINE__, ##__VA_ARGS__)
 

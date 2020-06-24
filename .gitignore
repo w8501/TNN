@@ -485,3 +485,4 @@ lint/tmp/
 # lint/reports/
 
 
+.clang-format

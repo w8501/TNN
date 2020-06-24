@@ -15,6 +15,7 @@
 #include "tnn/interpreter/tnn/model_interpreter.h"
 #include <stdlib.h>
 #include <sstream>
+#include <algorithm>
 
 #include "tnn/core/common.h"
 #include "tnn/interpreter/tnn/layer_interpreter/abstract_layer_interpreter.h"
@@ -83,6 +84,7 @@ Status ModelInterpreter::InterpretProto(std::string content) {
         return Status(TNNERR_INVALID_NETCFG, "split proto error");
     }
     if (cfg_arr.empty() || cfg_arr.size() <= 5) {
+
         return Status(TNNERR_INVALID_NETCFG, "content line <= 5");
     }
 

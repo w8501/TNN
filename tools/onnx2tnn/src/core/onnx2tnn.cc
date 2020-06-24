@@ -16,7 +16,7 @@
 
 #include <math.h>
 #include <stdio.h>
-#include <execinfo.h>
+//#include <execinfo.h>
 
 #include <set>
 #include <exception>
@@ -705,12 +705,12 @@ int Onnx2TNN::ClearEmptyNode(std::vector<IndexNode>& index_nodes) {
 std::string get_backtrack() {
     const int MAX_SIZE = 10;
     std::string backtrace_str;
-    char **strings = nullptr;
-    void *array[MAX_SIZE] = {0};
-    size_t size = backtrace(array, MAX_SIZE);
-    strings = backtrace_symbols(array, size);
-    for (size_t i = 0; i < size; i++)
-        backtrace_str += std::string(strings[i]) + std::string("\n");
-    free(strings);
+    //char **strings = nullptr;
+    //void *array[MAX_SIZE] = {0};
+    //size_t size = backtrace(array, MAX_SIZE);
+    //strings = backtrace_symbols(array, size);
+    //for (size_t i = 0; i < size; i++)
+    //    backtrace_str += std::string(strings[i]) + std::string("\n");
+    //free(strings);
     return backtrace_str;
 }

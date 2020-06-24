@@ -29,9 +29,9 @@
                         __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
 #define LOGD(fmt, ...)                                                         \
-    printf(("%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+    printf(("%s [Line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define LOGE(fmt, ...)                                                         \
-    printf(("%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+    printf(("%s [Line %d] " fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__)
 #endif  //__ANDROID__
 
 #ifndef DEBUG
